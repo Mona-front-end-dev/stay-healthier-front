@@ -19,7 +19,7 @@ export const loadUser = () => async (dispatch) => {
   }
 
   try {
-    const res = await axios.get('/api/api/auth')
+    const res = await axios.get('/api/auth')
 
     dispatch({
       type: USER_LOADED,
@@ -46,7 +46,7 @@ export const register = ({ name, email, password }) => async (dispatch) => {
   try {
     //sending the request to get the response
     const res = await axios.post(
-      '/api/api/users',
+      '/api/users',
       { name, email, password },
       config,
     )
@@ -82,7 +82,7 @@ export const login = (email, password) => async (dispatch) => {
 
   try {
     //sending the request to get the response
-    const res = await axios.post('/api/api/auth', { email, password }, config)
+    const res = await axios.post('/api/auth', { email, password }, config)
 
     //tells the app that state has been updated
     dispatch({
