@@ -1,0 +1,19 @@
+
+.bg-image {
+  background-image: url("./assets/bg-image-home.jpg");
+  background-color: #000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.form-wrapper {
+  background-color: #b9b7b7db;
+  margin: 10rem;
+  border-radius: 2%;
+}
+
