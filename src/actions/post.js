@@ -6,7 +6,7 @@ import { DELETE_POST, GET_POSTS, POST_ERROR, ADD_POST } from './types'
 export const getPosts = () => async (dispatch) => {
   try {
     const res = await axios.get(
-      'http://butikrea.wwwnl1-ss15.a2hosted.com/api/posts',
+      '/api/posts',
     )
     dispatch({
       type: GET_POSTS,
@@ -24,7 +24,7 @@ export const getPosts = () => async (dispatch) => {
 export const deletePost = (id) => async (dispatch) => {
   try {
     const res = await axios.delete(
-      `http://butikrea.wwwnl1-ss15.a2hosted.com/api/posts/${id}`,
+      `/api/posts/${id}`,
     )
 
     dispatch({
@@ -50,7 +50,7 @@ export const addPost = (formData) => async (dispatch) => {
   }
   try {
     const res = await axios.post(
-      'http://butikrea.wwwnl1-ss15.a2hosted.com/api/posts',
+      '/api/posts',
       formData,
       config,
     )
