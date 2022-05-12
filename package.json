@@ -1,5 +1,6 @@
 {
   "name": "client",
+  "homepage": "http://butikrea.wwwnl1-ss15.a2hosted.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -19,6 +20,7 @@
     "redux": "^4.1.2",
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.4.1",
+    "serve": "^13.0.2",
     "uuid": "^8.3.2",
     "web-vitals": "^2.1.4"
   },
